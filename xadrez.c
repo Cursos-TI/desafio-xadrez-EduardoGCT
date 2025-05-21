@@ -17,7 +17,7 @@ int main() {
     do 
     {
 
-        if (passosBispo == 4){
+        if (passosBispo == 4) {
             printf("Direita, Cima.\n\n");
             passosBispo++;
         } else {
@@ -52,6 +52,18 @@ int main() {
 
 
     // Nível Aventureiro - Movimentação do Cavalo
+    printf("<<< Movimentação Cavalo. >>>\n\n");
+
+    int movimentoCompleto = 1; //flag para controlar o movimento em L
+
+    while (movimentoCompleto--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n"); //imprime cima duas vezes
+        }
+        printf("Esquerda\n"); //imprime direita uma vez
+    }
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
